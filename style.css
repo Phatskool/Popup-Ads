@@ -1,0 +1,102 @@
+/*Yiannis popup box*/
+.popup-box {
+    position: absolute;
+    border-radius: 5px;
+    background: #000;
+    display: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999999;
+    font-size: 14px;
+    position: fixed;
+    left: 0 !important;
+    top: auto !important;
+    bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+	border-radius: 0px 5px 0 0;
+    width: 400px;
+    height: 260px;
+}
+ 
+.popup-box .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+    cursor: pointer;
+    color: #e0e0e0;
+    padding: 10px;
+    font-size: 12px;
+    
+}
+ 
+.popup-box .close:hover {
+    color: #fff;
+}
+ 
+.popup-box h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.popup-box .top {
+    padding: 7px 0 7px 10px;
+	background-color: #000;
+	border-radius: 0px 5px 0 0;
+	color: #e0e0e0;
+}
+ 
+.popup-box .bottom {
+    background: #000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ 
+#blackout {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 999999;
+    left: 0;
+    display: none;
+}
+/*responsive*/
+@media only screen and (max-width:500px){
+	.popup-box{
+		width: 100%;
+		height: 239px;
+	}
+	.popup-box .top{
+		border-radius: 0px;
+	}
+}
+/*mute video controls*/
+.mute-video {
+    background:url(https://flashnews.gr/muted.png) no-repeat center;
+    background-size:13px;
+	border:0;
+    width:35px;
+    height:35px;
+    text-indent:-999px;
+
+}
+.unmute-video {
+    background:url(https://flashnews.gr/unmuted.png) no-repeat center;
+    background-size:13px;
+}
+
+.mute-pos{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.mute-video:hover , .unmute-video:hover{
+    filter: brightness(120%);
+}
+/*Yiannis popup box end*/
