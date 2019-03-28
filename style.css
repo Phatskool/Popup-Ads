@@ -75,7 +75,7 @@
 }
 /*mute video controls*/
 .mute-video {
-    background:url(https://flashnews.gr/muted.png) no-repeat center;
+    background:url(/muted.png) no-repeat center;
     background-size:13px;
 	border:0;
     width:35px;
@@ -84,7 +84,7 @@
 
 }
 .unmute-video {
-    background:url(https://flashnews.gr/unmuted.png) no-repeat center;
+    background:url(/unmuted.png) no-repeat center;
     background-size:13px;
 }
 
